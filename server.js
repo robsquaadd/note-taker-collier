@@ -10,5 +10,5 @@ app.use("/", htmlRoutes);
 const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {
-  console.log(`API server is now located at http://localhost:${PORT}`);
+  console.log(`API server is now located at Port ${PORT}`);
 });
