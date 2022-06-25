@@ -26,7 +26,7 @@ router.post("/notes", (req, res) => {
     path.join(__dirname, "../../db/db.json"),
     JSON.stringify(notesArray, null, 2)
   );
-  res.json(notesArray);
+  res.json(req.body);
 });
 
 router.delete("/notes/:id", (req, res) => {
